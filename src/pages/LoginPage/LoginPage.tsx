@@ -1,6 +1,6 @@
 import AppLogo from "/appLogo.png";
-import GoogleLogo from "../../assets/googleLogo.png"
-import LoginCardFooter from "../../assets/loginCardFooter.png"
+import LoginCardFooter from "../../features/auth/assets/loginCardFooter.png"
+import {GoogleLoginButton} from "../../features/auth/components/GoogleLoginButton";
 
 export default function LoginPage() {
 
@@ -86,58 +86,7 @@ export default function LoginPage() {
                     {/* leading-[26px]: 줄 간격을 커스텀 값 26px로 설정 (임의값 사용) */}
                     {/* text-[#6B5D4F]: 텍스트 색상을 커스텀 색상 #6B5D4F로 설정 */}
 
-                    <div className="google-login-button">
-                        {/* Google 로그인 버튼 */}
-                        <button
-                            className="
-                                mt-10 
-                                inline-flex 
-                                items-center 
-                                justify-center 
-                                gap-5 
-                                text-gray-700
-                                h-12 
-                                px-20 
-                                rounded-lg 
-                                border border-[#D1D5DC] 
-                                bg-white 
-                                shadow-sm 
-                                hover:bg-gray-50 
-                                hover:shadow-md 
-                                transition-all 
-                                duration-200
-                            "
-                        >
-                            {/* mt-10: 상단 마진 2.5rem(40px) */}
-                            {/* inline-flex: 인라인 flexbox 레이아웃 */}
-                            {/* items-center: 교차축(cross-axis) 중앙 정렬 */}
-                            {/* justify-center: 주축(main-axis) 중앙 정렬 */}
-                            {/* gap-5: 자식 요소 간 간격 1.25rem(20px) */}
-                            {/* text-gray-700: 텍스트 색상 회색(700톤) */}
-                            {/* h-12: 높이 3rem(48px) */}
-                            {/* px-20: 좌우 패딩 5rem(80px) */}
-                            {/* rounded-lg: 테두리 반경 0.5rem(8px)로 둥근 모서리 */}
-                            {/* border border-[#D1D5DC]: 테두리 1px, 색상 #D1D5DC */}
-                            {/* bg-white: 배경색 흰색 */}
-                            {/* shadow-sm: 작은 그림자 효과 */}
-                            {/* hover:bg-gray-50: 호버 시 배경색을 연한 회색으로 변경 */}
-                            {/* hover:shadow-md: 호버 시 중간 크기 그림자로 변경 */}
-                            {/* transition-all: 모든 속성 변화에 애니메이션 적용 */}
-                            {/* duration-200: 애니메이션 지속 시간 200ms */}
-                            <img src={GoogleLogo} alt="google-logo" className="w-5 h-5" />
-                                {/* w-5: 너비 1.25rem(20px) */}
-                                {/* h-5: 높이 1.25rem(20px) */}
-                                <span className="
-                                    font-inter
-                                    text-sm 
-                                    text-[#2A2418]">
-                                Continue with Google
-                                </span>
-                                {/* font-inter: 커스텀 폰트 "Inter" 적용 */}
-                                {/* text-sm: 폰트 크기 0.875rem(14px) */}
-                                {/* text-[#2A2418]: 텍스트 색상을 커스텀 색상 #2A2418로 설정 */}
-                        </button>
-                    </div>
+                    <GoogleLoginButton/>
 
                     <div className="mt-6 justify-center">
                         {/* mt-6: 상단 마진 1.5rem(24px) */}
