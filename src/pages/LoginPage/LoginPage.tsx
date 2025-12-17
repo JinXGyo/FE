@@ -1,6 +1,6 @@
 import AppLogo from "/appLogo.png";
 import LoginCardFooter from "../../features/auth/assets/loginCardFooter.png"
-import {GoogleLoginButton} from "../../features/auth/components/GoogleLoginButton";
+import {GoogleLoginButton} from "../../features/auth/components/GoogleLoginButton.tsx"
 
 export default function LoginPage() {
 

@@ -1,4 +1,4 @@
-import GoogleLogo from "../../features/auth/assets/googleLogo.png"
+import GoogleLogo from "../assets/googleLogo.png"
 
 export function GoogleLoginButton() {
 
