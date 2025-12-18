@@ -1,4 +1,4 @@
-import GoogleLogo from "../assets/googleLogo.png"
+import GoogleLogo from "@/features/auth/assets/googleLogo.png"
 
 export function GoogleLoginButton() {
 
@@ -24,8 +24,15 @@ export function GoogleLoginButton() {
                 shadow-[0_0_0_1px_rgba(209,213,220,0.8)]
                 hover:shadow-[0_0_0_1px_rgba(184,189,199,0.9)] 
                 transition-all 
-                active:scale-[0.985]
                 duration-200
+
+                focus-visible:outline-none
+
+                active:shadow-inner
+                active:scale-[0.98]
+                active:bg-gray-100
+                active:ring-1
+                active:ring-[#C5CAD3]
             "
             >
             {/* mt-10: 상단 마진 2.5rem(40px) */}
