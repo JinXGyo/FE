@@ -1,4 +1,4 @@
-import {GoogleLoginButton} from "../../features/auth/components/GoogleLoginButton.tsx"
+import { GoogleLoginButton } from "../../features/auth/components/GoogleLoginButton.tsx"
 import { LoginCard } from "../../features/auth/components/LoginCard";
 import { BrandHeader } from "../../features/auth/components/BrandHeader";
 import { LoginCardFooter } from "../../features/auth/components/LoginCardFooter";
@@ -29,7 +29,7 @@ export default function LoginPage() {
                     <LoginCardFooter/>
 
                 </LoginCard>
-            </div>
+        </div>
     )
 
 }
