@@ -1,7 +1,7 @@
 import { BrandSection } from "./BrandSection.tsx"
 import { NotificationButton } from "./NotificationButton.tsx"
-
-import LogoutIcon from "@/layouts/assets/logoutIcon.svg"
+import { LogoutButton } from "./LogoutButton.tsx" 
+import { HeaderAvatar } from "./HeaderAvatar.tsx"
 
 export default function Header(){
 
@@ -10,7 +10,7 @@ export default function Header(){
         <header className="
             h-16
             w-full
-            px-6
+            px-8
             flex
             items-center
             justify-between
@@ -18,18 +18,18 @@ export default function Header(){
             border-gray-200
             bg-white
         ">
+        {/* border-b: 하단 테두리 1px */}
+           
             <BrandSection/>
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-8">
 
                 <NotificationButton/>
 
-                <div className="logout">
-                    <img src={LogoutIcon} className="logout-icon" alt="logout-icon"/>
-                    Logout
-                </div>
+                <LogoutButton/>
 
-                {/* 사용자의 프로필 사진 */}
+                <HeaderAvatar/>
+            
             </div>
         </header>
 
