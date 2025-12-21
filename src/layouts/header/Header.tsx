@@ -3,7 +3,7 @@ import { NotificationButton } from "./NotificationButton.tsx"
 import { LogoutButton } from "./LogoutButton.tsx" 
 import { HeaderAvatar } from "./HeaderAvatar.tsx"
 
-export default function Header(){
+export function Header(){
 
     return (
 
