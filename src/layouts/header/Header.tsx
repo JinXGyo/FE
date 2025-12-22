@@ -18,7 +18,6 @@ export function Header(){
             border-gray-200
             bg-white
         ">
-        {/* border-b: 하단 테두리 1px */}
            
             <BrandSection/>
 
