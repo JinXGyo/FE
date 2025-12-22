@@ -14,7 +14,7 @@ export function BrandSection(){
                 {/* leading-tight: 줄 간격 1.25 (tight) */}
                 {/* text-left: 텍스트 왼쪽 정렬 */}
 
-                <span className="text-sm font-semibold text-gray-900 font-playfair text-left">
+                <span className="text-sm font-semibold text-gray-900 font-playfair">
                     {/* text-sm: 폰트 크기 0.875rem(14px) */}
                     {/* font-semibold: 폰트 굵기 600 */}
                     {/* text-gray-900: 텍스트 색상 회색(900톤) */}
@@ -23,7 +23,7 @@ export function BrandSection(){
                     LIT    
                 </span>
                 
-                <span className="text-xs text-gray-500 font-normal text-left">
+                <span className="text-xs text-gray-500 font-normal">
                     {/* text-xs: 폰트 크기 0.75rem(12px) */}
                     {/* text-gray-500: 텍스트 색상 회색(500톤) */}
                     {/* font-normal: 폰트 굵기 400 */}

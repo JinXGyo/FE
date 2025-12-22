@@ -1,8 +1,8 @@
 import { SidebarItem } from "./SidebarItem.tsx"
-import HomeIcon from "../assets/HomeIcon.svg"
-import LearningIcon from "../assets/learningIcon.svg"
-import StudyIcon from "../assets/studyIcon.svg"
-import SettingsIcon from "../assets/settingsIcon.svg"
+import HomeIcon from "../../assets/HomeIcon.svg"
+import FocusingIcon from "../../assets/focusingIcon.svg"
+import BrainStormingIcon from "../../assets/brainstormingIcon.svg"
+import SettingsIcon from "../../assets/settingsIcon.svg"
 import { NavLink } from "react-router-dom"
 
 
@@ -48,13 +48,13 @@ export function Sidebar(){
 
                 <NavLink to="leaning">
                     {({ isActive}) => (
-                        <SidebarItem iconSrc={LearningIcon} label="Learning" />
+                        <SidebarItem iconSrc={FocusingIcon} label="Focusing" />
                     )}
                 </NavLink>
                 
                 <NavLink to="study">
                     {({ isActive }) => (
-                        <SidebarItem iconSrc={StudyIcon} label="Study" />
+                        <SidebarItem iconSrc={BrainStormingIcon} label="Brain Storming" />
                     )}
                 </NavLink>
 
