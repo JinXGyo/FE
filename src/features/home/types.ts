@@ -6,3 +6,11 @@ export type Card = {
     thumbnail : string;    
 
 };
+
+export type FocusingCard = Card;
+
+export type BrainStormingCard = Card & {
+
+    members: number;
+    comments: number;
+}

@@ -1,14 +1,17 @@
 import { StudyCard } from "./StudyCard";
-import type { Card } from "../types"
+import type { Card, BrainStormingCard } from "../types"
+import { CardMetaData } from "./CardMetaData";
+import type { ReactNode } from "react";
 
-type BookmarkGridProps = {
+type BookmarkedSectionProps = {
 
     title : string;
     cards : Card[];
+    renderBookmarkedMetaData?: (card: BrainStormingCard) => ReactNode;
 
 }
 
-export function BookmarkedSection( {title, cards} : BookmarkGridProps ){
+export function BookmarkedSection( {title, cards, renderBookmarkedMetaData} : BookmarkedSectionProps ){
 
     return(
 
@@ -26,14 +29,15 @@ export function BookmarkedSection( {title, cards} : BookmarkGridProps ){
 
             <div className="
                 grid 
-                grid-cols-3 
+                grid-cols-3
                 gap-4
                 ">
 
                 {cards.map((card) => (
 
-                    <StudyCard key={card.id} card={card} variant="bookmarked"/> 
-
+                    <StudyCard key={card.id} card={card} variant="bookmarked">
+                        {renderBookmarkedMetaData?.(card as BrainStormingCard)}
+                    </StudyCard>
                 ))}
 
             </div>

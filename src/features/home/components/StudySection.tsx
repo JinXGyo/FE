@@ -1,7 +1,8 @@
 import {SectionHeader} from "./SectionHeader.tsx"
 import {RecentSection} from "./RecentSection.tsx"
 import {BookmarkedSection} from "./BookmarkedSection.tsx"
-import type {Card} from "../types"
+import type { BrainStormingCard, Card } from "../types"
+import type { ReactNode } from "react"
 
 type LearningSectionProps = {
 
@@ -13,6 +14,8 @@ type LearningSectionProps = {
     bookmarkedCards : Card[];
     actionLabel : string;
 
+    renderRecentMetaData?: (card: BrainStormingCard) => ReactNode;
+    renderBookmarkedMetaData?: (card: BrainStormingCard) => ReactNode;
 }
 
 export function StudySection( {
@@ -21,7 +24,9 @@ export function StudySection( {
     description, 
     recentCard,
     bookmarkedCards,
-    actionLabel
+    actionLabel,
+    renderRecentMetaData,
+    renderBookmarkedMetaData
 } : LearningSectionProps ) {
     return(
 
@@ -38,9 +43,9 @@ export function StudySection( {
 
             <SectionHeader icon={icon} title={title} description={description}/>
 
-            <RecentSection title={title} card={recentCard} actionLabel={actionLabel}/>
+            <RecentSection title={title} card={recentCard} actionLabel={actionLabel} renderRecentMetaData={renderRecentMetaData}/>
 
-            <BookmarkedSection title={title} cards={bookmarkedCards}/>
+            <BookmarkedSection title={title} cards={bookmarkedCards} renderBookmarkedMetaData={renderBookmarkedMetaData}/>
 
         </section>
     )

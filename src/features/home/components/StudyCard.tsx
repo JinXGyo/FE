@@ -52,9 +52,11 @@ export function StudyCard( { variant, card, actionLabel, children } : StudyCardP
                     {card.title}
                 </h4>
 
-                <p className="font-inter text-xs text=[#6B5D4F]">
+                <p className="font-inter text-xs text=[#6B5D4F] mt-2">
                     {card.author}
                 </p>
+
+                {children}
 
                 {isRecent && (
                     <button className="
@@ -65,7 +67,7 @@ export function StudyCard( { variant, card, actionLabel, children } : StudyCardP
                         text-sm
                         px-3
                         py-1.5
-                        mt-8
+                        mt-6
                         "
                     >
                         {actionLabel}

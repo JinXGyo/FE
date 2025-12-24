@@ -1,15 +1,18 @@
 import { StudyCard } from "./StudyCard"
-import type { Card } from "../types"
+import type { Card, BrainStormingCard } from "../types"
+import { CardMetaData } from "./CardMetaData";
+import type { ReactNode } from "react";
 
 type RecentSectionProps = {
 
     card : Card;
     title : string;
     actionLabel : string;
+    renderRecentMetaData?: (card: BrainStormingCard) => ReactNode;
 
 }
 
-export function RecentSection( {card, title, actionLabel} : RecentSectionProps, ){
+export function RecentSection( {card, title, actionLabel, renderRecentMetaData} : RecentSectionProps ){
 
     return(
 
@@ -30,7 +33,9 @@ export function RecentSection( {card, title, actionLabel} : RecentSectionProps, 
                 variant="recent"
                 card={card}
                 actionLabel={actionLabel}
-            />
+            >
+                {renderRecentMetaData?.(card as BrainStormingCard)}
+            </StudyCard>
 
         </div>
 
