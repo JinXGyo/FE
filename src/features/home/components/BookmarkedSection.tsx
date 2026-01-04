@@ -37,7 +37,7 @@ export function BookmarkedSection( {title, cards, renderBookmarkedMetaData} : Bo
 
                 {cards.map((card) => (
 
-                    <StudyCard key={card.id} card={card} variant="bookmarked">
+                    <StudyCard key={card.id} card={card} variant="grid">
                         {renderBookmarkedMetaData?.(card as BrainStormingCard)}
                     </StudyCard>
                 ))}

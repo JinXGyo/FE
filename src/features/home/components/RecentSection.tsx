@@ -30,7 +30,7 @@ export function RecentSection( {card, title, actionLabel, renderRecentMetaData} 
 
             <StudyCard
                 key={card.id}
-                variant="recent"
+                variant="horizontal"
                 card={card}
                 actionLabel={actionLabel}
             >
