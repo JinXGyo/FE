@@ -18,11 +18,13 @@ export function GoogleLoginButton() {
 
                 text-gray-700
                 rounded-lg 
-                border-2 border-[#D1D5DC] 
+                border-2
+                border-[#D1D5DC] 
                 bg-white 
 
-                shadow-[0_0_0_1px_rgba(209,213,220,0.8)]
-                hover:shadow-[0_0_0_1px_rgba(184,189,199,0.9)] 
+                hover:bg-gray-50
+                hover:shadow-md
+                
                 transition-all 
                 duration-200
 
@@ -31,7 +33,6 @@ export function GoogleLoginButton() {
                 active:shadow-inner
                 active:scale-[0.98]
                 active:bg-gray-100
-                active:ring-1
                 active:ring-[#C5CAD3]
             "
             >

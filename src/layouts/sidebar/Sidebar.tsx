@@ -42,25 +42,25 @@ export function Sidebar(){
 
                 <NavLink to="/home">
                     {({ isActive }) => (
-                        <SidebarItem iconSrc={HomeIcon} label="Home" active />
+                        <SidebarItem iconSrc={HomeIcon} label="Home" active={isActive} />
                     )}
                 </NavLink>
 
-                <NavLink to="leaning">
+                <NavLink to="/focusing">
                     {({ isActive}) => (
-                        <SidebarItem iconSrc={FocusingIcon} label="Focusing" />
+                        <SidebarItem iconSrc={FocusingIcon} label="Focusing" active={isActive} />
                     )}
                 </NavLink>
                 
-                <NavLink to="study">
+                <NavLink to="/brainstorming">
                     {({ isActive }) => (
-                        <SidebarItem iconSrc={BrainStormingIcon} label="Brain Storming" />
+                        <SidebarItem iconSrc={BrainStormingIcon} label="Brain Storming" active={isActive} />
                     )}
                 </NavLink>
 
-                <NavLink to="settings">
+                <NavLink to="/settings">
                     {({ isActive }) => (
-                        <SidebarItem iconSrc={SettingsIcon} label="Settings" />
+                        <SidebarItem iconSrc={SettingsIcon} label="Settings" active={isActive} />
                     )}
                 </NavLink>
             </nav>

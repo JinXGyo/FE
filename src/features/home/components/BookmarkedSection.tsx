@@ -29,7 +29,9 @@ export function BookmarkedSection( {title, cards, renderBookmarkedMetaData} : Bo
 
             <div className="
                 grid 
-                grid-cols-3
+                grid-cols-1
+                md:grid-cols-3
+                lg:grid-cols-4
                 gap-4
                 ">
 

@@ -13,6 +13,7 @@ export function QuoteBanner(){
             border-[#5A4A3A33]
             rounded-2xl
             shadow-lg
+            m-8
         ">
 
             <p className="font-playfair italic text-[#2A2418] text-xl">

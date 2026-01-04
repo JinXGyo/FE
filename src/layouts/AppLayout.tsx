@@ -17,10 +17,8 @@ export function AppLayout() {
 
             <div className="flex flex-1 overflow-hidden">
                 <Sidebar/>
-            
-
                 
-                <main className="flex-1 p-8 overflow-y-auto">
+                <main className="flex-1 overflow-y-auto pb-8">
                      {/* flex-1: 남은 공간을 모두 차지 */}
                         <Outlet/>
                 </main>

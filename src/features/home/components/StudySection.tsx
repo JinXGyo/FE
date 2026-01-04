@@ -39,6 +39,7 @@ export function StudySection( {
             border-1 
             border-[#5A4A3A26]
             rounded-2xl
+            mx-8
         ">
 
             <SectionHeader icon={icon} title={title} description={description}/>

@@ -40,7 +40,7 @@ export function StudyCard( { variant, card, actionLabel, children } : StudyCardP
                             ${isRecent ? "w-32 h-44 border-transparent rounded-l-2xl" : "rounded-t-2x1 w-full h-40"}
                             
                         `}    
-                />
+            />
 
             <div className={`
                     flex flex-col
@@ -57,7 +57,13 @@ export function StudyCard( { variant, card, actionLabel, children } : StudyCardP
                 </p>
 
                 {children}
-
+{/*}
+                {actions && (
+                    <div className="absolute top-3 right-3">
+                        {actions}
+                    </div>
+                )}
+*/}
                 {isRecent && (
                     <button className="
                         bg-[#5A4A3A]
