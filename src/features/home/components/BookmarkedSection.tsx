@@ -1,6 +1,5 @@
 import { StudyCard } from "./StudyCard";
 import type { Card, BrainStormingCard } from "../types"
-import { CardMetaData } from "./CardMetaData";
 import type { ReactNode } from "react";
 
 type BookmarkedSectionProps = {
